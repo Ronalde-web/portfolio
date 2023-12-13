@@ -26,3 +26,6 @@ body {
 .info p{
     margin: .5rem;
 }
+.icon {
+    margin: 5px;
+}
