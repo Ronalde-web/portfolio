@@ -1,0 +1,67 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.acordeon .abilidades {
+    display: none;
+}
+.acordeon .trigger {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #111111;
+    border-radius: 1rem;
+    margin: 1rem 0;  
+    transition: .5s;
+}
+/* .acordeon.open,
+.acordeon:hover {
+    background-color: aqua;
+    border-color: aliceblue;
+} */
+.acordeon .trigger::after {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/img/icons/seta.svg');
+}
+.acordeon.open .trigger::after {
+    transform: rotate(180deg);
+}
+.acordeon .trigger:hover {
+    background-color: rgb(27, 27, 31);
+    color: #fff;
+    border-color: #fff;
+}
+.acordeon .trigger:hover{
+    cursor: pointer;
+}
+.foto {
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+}
+li {
+    text-align: center;
+    /* color: rgb(17, 16, 14); */
+}
+.abilidades {
+    background-color: azure;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3%;
+}
+.abilidades .ul .li {
+    font-size: 50px;
+}
+.acordeon.open .abilidades {
+    display: inline-block;
+}
